@@ -49,9 +49,6 @@
 ;;; Code:
 ;; Load cc-mode
 (require 'cc-mode)
-(require 'cl) ;a test to see whether this affects anything
-(require 'cc-fonts)
-(require 'cc-langs)
 
 ;; These are only required at compile time to get the sources for the
 ;; language constants.  (The cc-fonts require and the font-lock
@@ -59,6 +56,10 @@
 ;; (eval-after-load "font-lock" ...) but then some trickery is
 ;; necessary to get them compiled.)
 (eval-when-compile
+  (require 'cc-mode)
+  (require 'cl-lib)
+  (require 'cc-fonts)
+  (require 'cc-langs)
   )
 
 (eval-and-compile

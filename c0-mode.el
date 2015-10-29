@@ -57,7 +57,7 @@
 ;; necessary to get them compiled.)
 (eval-when-compile
   (require 'cc-mode)
-  (require 'cl-lib)
+  ;(require 'cl-lib)
   (require 'cc-fonts)
   (require 'cc-langs)
   )

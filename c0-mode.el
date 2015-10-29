@@ -56,8 +56,8 @@
 ;; (eval-after-load "font-lock" ...) but then some trickery is
 ;; necessary to get them compiled.)
 (eval-when-compile
+  (require 'cl)
   (require 'cc-mode)
-  ;(require 'cl-lib)
   (require 'cc-fonts)
   (require 'cc-langs)
   )

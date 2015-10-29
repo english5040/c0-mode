@@ -48,6 +48,7 @@
 
 ;;; Code:
 ;; Load cc-mode
+(require 'cl)
 (require 'cc-mode)
 
 ;; These are only required at compile time to get the sources for the

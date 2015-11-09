@@ -47,8 +47,11 @@
 ;;    0.1 - Initial release
 
 ;;; Code:
-;; Load cc-mode
+
+;; It appears that this is now neccessary to get common lisp functions.
 (require 'cl)
+
+;; Load cc-mode
 (require 'cc-mode)
 
 ;; These are only required at compile time to get the sources for the
